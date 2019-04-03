@@ -1,7 +1,11 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ирина Береза](https://up.htmlacademy.ru/adaptive/16/user/978541).
+<<<<<<< HEAD
 * Наставник: [Никита Рогатнев].
+=======
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
+>>>>>>> 0fa719e0f0bebab86b09886f4650e0ad7b0aabff
 
 ---
 
