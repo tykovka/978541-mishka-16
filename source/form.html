@@ -9,7 +9,7 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo">
+      <a class="header__logo" href="index.html">
         <img class="header__logo-img" src="img/mishka-logo-mobile.svg .png" width="95" height="35" alt="Мишка">
       </a>
       <nav class="header__menu">
@@ -26,79 +26,77 @@
     <section class="form-intro">
       <h2>Вязание на заказ</h2>
     </section>
-    <section class="form-params">
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
           свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="type-block">
-          <legend class="type-block__title">Тип</legend>
-          <label class="type-block__item-label">
-            <input class="type-block__item-radio" type="radio" name="acces-interior" checked>
+        <fieldset class="form__group">
+          <legend class="form__title">Тип</legend>
+          <label class="form__label">
+            <input class="form__input" type="radio" name="acces-interior" checked>
             Аксессуар для интерьера
           </label>
           <label class="type-block__item-label">
-            <input class="type-block__item-radio" type="radio" name="child-toy">
+            <input class="form__input" type="radio" name="child-toy">
             Детская игрушка
           </label>
         </fieldset>
-        <fieldset class="colors-block">
-          <legend class="colors-block__title">Цвет</legend>
-          <label class="colors-block__item-label">
-            <input class="colors-block__item-checkbox" type="checkbox" name="color" checked>
+        <fieldset class="form__color-block">
+          <legend class="form__title">Цвет</legend>
+          <label class="form__color-label">
+            <input class="form__color-input" type="checkbox" name="color" checked>
             Белый
           </label>
-          <label class="colors-block__item-label">
-            <input class="colors-block__item-checkbox" type="checkbox" name="color" checked>
+          <label class="form__label">
+            <input class="form__input" type="checkbox" name="color" checked>
             Серый
           </label>
-          <label class="colors-block__item-label">
-            <input class="colors-block__item-checkbox" type="checkbox" name="color">
+          <label class="form__label">
+            <input class="form__input" type="checkbox" name="color">
             "Тифанни"
           </label>
-          <label class="colors-block__item-label">
-            <input class="colors-block__item-checkbox" type="checkbox" name="color">
+          <label class="form__label">
+            <input class="form__input" type="checkbox" name="color">
             Черный
           </label>
-          <label class="colors-block__item-label">
-            <input class="colors-block__item-checkbox" type="checkbox" name="color">
+          <label class="form__label">
+            <input class="form__input" type="checkbox" name="color">
             Розовый
           </label>
-          <label class="colors-block__item-label">
-            <input class="colors-block__item-checkbox" type="checkbox" name="color">
+          <label class="form__label">
+            <input class="form__input" type="checkbox" name="color">
             Оранжевый
           </label>
         </fieldset>
-        <fieldset class="name-block">
-          <legend class="name-block__title">ФИО</legend>
-          <label class="name-block__label">
+        <fieldset class="form__group">
+          <legend class="form__title">ФИО</legend>
+          <label class="form__label">
             Имя:
-            <input class="name-block__input" type="text" name="name" placeholder="Введите ваше имя*">
+            <input class="form__input" type="text" name="name" placeholder="Введите ваше имя*">
           </label>
-          <label class="name-block__label">
+          <label class="form__label">
             Фамилия:
-            <input class="name-block__input" type="text" name="name" placeholder="Укажите фамилию*">
+            <input class="form__input" type="text" name="name" placeholder="Укажите фамилию*">
           </label>
-          <label class="name-block__label">
+          <label class="form__label">
             Отчество:
-            <input class="name-block__input" type="text" name="name" placeholder="Отчество,если желаете*">
+            <input class="form__input" type="text" name="name" placeholder="Отчество,если желаете*">
           </label>
         </fieldset>
-        <fieldset class="phone-number-block">
-          <legend class="phone-number-block__title">Тел</legend>
-          <input class="phone-number-block__input" type="text" name="phone-number" placeholder="+7 XXX XXX XX XX*">
+        <fieldset class="form__group">
+          <legend class="form__title">Тел</legend>
+          <input class="form__input" type="text" name="phone-number" placeholder="+7 XXX XXX XX XX*">
         </fieldset>
-        <fieldset class="email-block">
-          <legend class="email-block__title">E-mail</legend>
-          <input class="email-block__input" type="text" name="email" placeholder="Ваш Email*">
+        <fieldset class="form__group">
+          <legend class="form__title">E-mail</legend>
+          <input class="form__input" type="text" name="email" placeholder="Ваш Email*">
         </fieldset>
-        <fieldset class="more-block">
-          <legend class="more-block__title">Доп</legend>
-          <textarea class="more-block__text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <fieldset class="form__group">
+          <legend class="form__title">Доп</legend>
+          <textarea class="form__text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <span class="form__note"><sup>*</sup>Поля обязательны для заполнения</span>
         <button class="form__send-order" button type="submit">Отправить заказ</button>
       </form>
-    </section>
   </main>
   <footer class="footer">
     <ul class="social">
