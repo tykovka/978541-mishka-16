@@ -3,7 +3,6 @@
 * Студент: [Ирина Береза](https://up.htmlacademy.ru/adaptive/16/user/978541).
 * Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
----
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
