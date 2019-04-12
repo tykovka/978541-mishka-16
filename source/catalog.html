@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,8 +24,8 @@
     </div>
   </header>
   <main class="main">
-    <section class="main__title">
-      <h2>Каталог товаров</h2>
+    <section class="catalog-intro">
+      <h2 class="catalog-intro__title">Каталог товаров</h2>
     </section>
     <section class="product-cards">
       <ul class="product-cards__list">
@@ -35,25 +36,27 @@
             <span class="card__params">Рост 30 см, вес 200г</span>
             <div class="card__footer">
               <span class="card__cost">1200 руб</span>
-              <a class="card__link" href="#"><img class="card__link--image" src="img/cart.svg" width="20" height="19"></a>
+              <a class="card__link" href="#"><img class="card__link--image" src="img/cart.svg" width="20"
+                  height="19"></a>
             </div>
           </article>
         </li>
         <li class="product-cards__item">
           <article class="card">
-            <img class="card__img" src="img/photo-2-mobile.svg" alt="Корзинка для белья" width="290" height="195">
-            <h2 class="card__title"><a href="#">Корзинка для белья</a></h2>
+            <img class="card__img" src="" alt="Корзинка для белья" width="290" height="195">
+            <h2><a class="card__title-link" href="#">Корзинка для белья</a></h2>
             <span class="card__params">Диаметр 15 см, высота 10см</span>
             <div class="card__footer">
               <span class="card__cost">690 руб.</span>
-              <a class="card__link" href="#"><img class="card__link--image" src="img/cart.svg" width="20" height="19"></a>
+              <a class="card__link" href="#"><img class="card__link--image" src="img/cart.svg" width="20"
+                  height="19"></a>
             </div>
           </article>
         </li>
         <li class="product-cards__item"></li>
         <article class="card">
-          <img class="card__img" src="img/photo-3-mobile.svg" alt="Большая корзинка для игрушек" width="290"
-            height="195">
+          <!-- <img class="card__img" src="img/photo-3-mobile.svg" alt="Большая корзинка для игрушек" width="290"
+        height="195"> -->
           <h2 class="card__title"><a href="#">Большая корзинка для игрушек</a></h2>
           <span class="card__params">Диаметр 30 см, высота 30см</span>
           <div class="card__footer">
@@ -70,6 +73,18 @@
         По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
       </p>
       <a class="process__order" href="#">Сделать заказ</a>
+    </section>
+    <section class="modal">
+      <form class="modal-form">
+        <h2 class="modal-form__title"></h2>
+        <span class="modal-form__sel-size">Выберите размер</span>
+        <ul class="modal-form__list">
+          <li class="modal-form__item"><button class="modal-form__butn-size">S</button></li>
+          <li class="modal-form__item"><button class="modal-form__butn-size">M</button></li>
+          <li class="modal-form__item"><button class="modal-form__butn-size">L</button></li>
+        </ul>
+        <button class="modal-form__butn-add button">Добавить</button>
+      </form>
     </section>
   </main>
   <footer class="footer">
