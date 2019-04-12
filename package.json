@@ -22,7 +22,7 @@
     "build": "gulp css",
     "start": "gulp start"
   },
-  "brows‹erslist": [
+  "browserslist": [
     "last 2 versions",
     "IE 11",
     "Firefox ESR"
