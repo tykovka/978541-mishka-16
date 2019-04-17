@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Мишка</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -11,19 +12,36 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo">
-        <img class="header__logo-img" src="img/mishka-logo-mobile.svg .png" width="95" height="35" alt="Мишка">
+        <img class="header__logo-img" src="" alt="Мишка">
       </a>
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="header__menu-item"><a href="form.info">Вязание на заказ</a></li>
-          <li class="header__menu-item header__menu-item--search"><a href="#">Поиск по сайту</a></li>
-          <li class="header__menu-item header__menu-item--cart"><a href="#">Корзина</a></li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="form.info">Вязание на заказ</a>
+          </li>
+          <li class="header__menu-item header__menu-item--search">
+            <a class="header__menu-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="header__menu-item header__menu-item--cart">
+            <a class="header__menu-link" href="#">Корзина: пока пуста</a>
+          </li>
         </ul>
       </nav>
+      <ul class="header__menu-more header__menu-more--out">
+          <li class="header__menu-more-item">
+            <a class="header__menu-more-link" href="#">Новые поступления</a>
+          </li>
+          <li class="header__menu-more-item">
+            <a class="header__menu-more-link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <span class="header__delivery header__delivery--out">Бесплатная доставка по России</span>
     </div>
   </header>
-  <main class="main">
+<main class="main">
     <section class="intro">
       <h1 class="intro__title">Милые штуки ручной работы для дома</h1>
       <ul class="intro__list">
@@ -94,11 +112,11 @@
             Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</a>
         </dd>
       </dl>
-      <div class="contacts__map">
+      <!-- <div class="contacts__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3737169803976!2d30.322034484311697!3d59.938805915698296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1554227934679!5m2!1sru!2sru"
           width="600" height="450" allowfullscreen></iframe>
-      </div>
+      </div> -->
       <button class="contacts__written button">Напишите нам</button>
     </section>
   </main>
