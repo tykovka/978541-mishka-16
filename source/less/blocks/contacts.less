@@ -1,12 +1,33 @@
+.contacts {
+  .wrapper-mob();
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+
+  margin-top: 98px;
+  margin-bottom: 25px;
 }
 
 .contacts__email-key,
-.contacts__email-value {
+.contacts__email-value,
+.contacts__adress-key,
+.contacts__adress-value {
+  display: inline;
   font-size: 15px;
   line-height: 30px;
   color: @col-grey;
+  margin: 0;
+}
+
+.contacts__email-value {
+  text-align: left;
+  margin-right: 0;
+}
+
+.contacts__written {
+  background: none;
+  padding: 12px 50px;
 }
