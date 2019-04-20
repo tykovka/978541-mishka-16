@@ -28,6 +28,21 @@
 }
 
 .contacts__written {
-  background: none;
-  padding: 12px 50px;
+  background-color: none;
+}
+
+@media only screen and (min-width: @tablet-width) {
+  .contacts{
+    .wrapper-tab();
+  }
+
+  .contacts__title {
+    .title-tab();
+  }
+
+  .contacts__written {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

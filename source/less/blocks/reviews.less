@@ -48,6 +48,43 @@
   margin-right: -5px;
 }
 
-.reviews__written {
-  padding: 12px 80px;
+@media only screen and (min-width: @tablet-width) {
+  .reviews {
+    .wrapper-tab();
+    position: relative;
+  }
+
+  .reviews__title {
+    .title-tab();
+    margin-left: -10px;
+    margin-top: 78px;
+  }
+
+  .reviews__item-text {
+    font-size: 17px;
+    line-height: 30px;
+
+    padding-top: 15px;
+    margin-left: -5px;
+    margin-bottom: 55px;
+  }
+  .reviews__control{
+    border: none;
+  }
+  .reviews__written {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 175px;
+  }
+
+  .button {
+    padding: 18px 0;
+  }
+
+  .reviews__control--early,
+  .reviews__control--next {
+    margin: 0;
+  }
+
 }

@@ -41,3 +41,55 @@
   padding-top: 65px;
   margin-bottom: 18px;
 }
+
+@media only screen and (min-width: @tablet-width) {
+  .about-us {
+    .wrapper-tab();
+  }
+
+  .about-us__title {
+    .title-tab();
+
+    padding-top:38px;
+    margin-left: -5px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    &--eco {
+      order: 1;
+      padding-right: 105px;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--cost {
+      order: 3;
+      padding-right: 70px;
+    }
+
+    &--nation {
+      order: 4;
+    }
+
+    &--like {
+      order: 5;
+      padding-right: 95px;
+    }
+
+    &--gift {
+      order: 6;
+    }
+
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 47px;
+  }
+}
