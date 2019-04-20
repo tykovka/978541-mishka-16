@@ -93,3 +93,40 @@
     margin-bottom: 47px;
   }
 }
+
+@media only screen and (min-width: @desktop-width) {
+  .about-us {
+    width: 700px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 120px;
+  }
+
+  .about-us__item {
+    padding-top: 58px;
+
+    &--eco {
+      padding-right: 120px;
+    }
+
+    &--cost {
+      padding-top: 65px;
+      padding-right: 90px;
+    }
+
+    &--nation {
+      order: 4;
+      padding-top: 65px;
+    }
+
+    &--like,
+    &--gift {
+      order: 5;
+      padding-top: 65px;
+      padding-right: 110px;
+    }
+  }
+}
