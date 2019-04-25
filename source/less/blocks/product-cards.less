@@ -1,3 +1,26 @@
 .product-cards__list {
   list-style: none;
+  padding: 0;
+  margin: 30px;
+}
+
+@media only screen and (min-width: @tablet-width) {
+  .product-cards__list {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-width: @desktop-width) {
+  .product-cards__list {
+    margin-top: 80px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .product-cards__item {
+    width: 315px;
+  }
 }

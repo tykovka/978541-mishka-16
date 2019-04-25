@@ -1,5 +1,24 @@
+.card {
+  .wrapper-mob();
+  border: 1px solid  #ececec;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+
 .card__title {
+  margin-top: 17px;
+  margin-bottom: 4px;
+}
+
+.card__text {
+  margin-left: 30px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid  #ececec;
+}
+
+.card__title-link {
   .item-title();
+  color: #000000;
 }
 
 .card__params {
@@ -8,8 +27,111 @@
   color: @col-grey;
 }
 
+.card__footer {
+  padding-left: 28px;
+  padding-top: 22px;
+  margin-bottom: 25px;
+}
+
 .card__cost {
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+}
+
+@media only screen and (min-width: @tablet-width) {
+  .card {
+    display: flex;
+    width: @tablet-width;
+
+    box-sizing: border-box;
+    border: none;
+
+    margin-bottom: 55px;
+    margin-left: 18px;
+  }
+
+  .card:last-child {
+    margin-bottom: 54px;
+  }
+
+  .card__title {
+    width: 240px;
+    margin-top: 24px;
+    margin-bottom: 5px;
+  }
+
+  .card__title-link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card__params {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid  #ececec;
+  }
+
+  .card__text {
+    margin-right: 64px;
+  }
+
+  .card__img {
+    width: 334px;
+    height: 334px;
+    background-color: gold;
+  }
+
+  .card__footer {
+    margin-top: auto;
+    margin-left: 5px;
+  }
+
+  .card__cost {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: @desktop-width) {
+  .card {
+    width: 315px;
+    box-sizing: border-box;
+    display: block;
+    margin-left: 0;
+
+    border: 1px solid #ececec;
+  }
+
+
+  .card-wrapper {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-right: 30px;
+    min-height: 196px;
+    border: none;
+  }
+
+  .card__img {
+    width: 315px;
+    height: 462px;
+    background-color: gold;
+  }
+
+  .card__text {
+    margin-right: 0;
+  }
+
+  .card__text:last-child {
+    padding-bottom: 55px;
+  }
+
+  .card__footer {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
 }

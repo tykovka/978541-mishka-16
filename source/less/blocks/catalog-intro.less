@@ -1,7 +1,38 @@
 .catalog-intro {
   background-color: #f1f1f1;
+  padding-top: 47px;
+  padding-bottom: 53px;
 }
 
 .catalog-intro__title {
   .intro-title();
+}
+
+@media only screen and (min-width: @tablet-width) {
+  .catalog-intro {
+    width: @tablet-width;
+    padding-top: 13px;
+    padding-bottom: 8px;
+  }
+
+  .catalog-intro__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-bottom: 71px;
+  }
+}
+
+@media only screen and (min-width: @desktop-width) {
+  .catalog-intro {
+    width: @desktop-width;
+    padding-top: 93px;
+    padding-bottom: 26px;
+  }
+
+  .catalog-intro__title {
+    font-weight: bold;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

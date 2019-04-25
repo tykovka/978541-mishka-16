@@ -12,19 +12,28 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
-        <img class="header__logo-img" src="img/mishka-logo-mobile.svg .png" width="95" height="35" alt="Мишка">
+        <img class="header__logo-img" src="" alt="Мишка">
       </a>
       <nav class="header__menu">
         <ul class="header__menu-list">
-          <li class="header__menu-item"><a>Каталог товаров</a></li>
-          <li class="header__menu-item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="header__menu-item header__menu-item--search"><a href="#">Поиск по сайту</a></li>
-          <li class="header__menu-item header__menu-item--cart"><a href="#">Корзина</a></li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="form.info">Вязание на заказ</a>
+          </li>
+          <li class="header__menu-item header__menu-item--search">
+            <a class="header__menu-link" href="#">Поиск по сайту</a>
+          </li>
+          <li class="header__menu-item header__menu-item--cart">
+            <a class="header__menu-link header__menu-link--cart" href="#">Корзина: пока пуста</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="main">
+
     <section class="catalog-intro">
       <h2 class="catalog-intro__title">Каталог товаров</h2>
     </section>
@@ -32,50 +41,66 @@
       <ul class="product-cards__list">
         <li class="product-cards__item">
           <article class="card">
-            <img class="card__img" src="img/rabbit-mobile.png" alt="Зайчик-попрыгайчик" width="290" height="195">
-            <h2 class="card__title"><a href="#">Зайчик-попрыгайчик</a></h2>
-            <span class="card__params">Рост 30 см, вес 200г</span>
-            <div class="card__footer">
-              <span class="card__cost">1200 руб</span>
-              <a class="card__link" href="#"><img class="card__link--image" src="img/cart.svg" width="20"
-                  height="19"></a>
+            <img class="card__img" src="img/rabbit-mobile.png" alt="Зайчик-попрыгайчик" width="" height="">
+            <div class="card-wrapper">
+              <div class="card__text">
+                <h2 class="card__title"><a class="card__title-link" href="#">Зайчик-попрыгайчик</a></h2>
+                <span class="card__params">Рост 30 см, вес 200 г</span>
+              </div>
+              <div class="card__footer">
+                <span class="card__cost">1 200 руб.</span>
+                <!-- <a class="card__link" href="#"><img class="card__link--image" src="img/cart.svg" width="20"
+                  height="19"></a> -->
+              </div>
             </div>
           </article>
         </li>
         <li class="product-cards__item">
           <article class="card">
-            <img class="card__img" src="" alt="Корзинка для белья" width="290" height="195">
-            <h2><a class="card__title-link" href="#">Корзинка для белья</a></h2>
-            <span class="card__params">Диаметр 15 см, высота 10см</span>
-            <div class="card__footer">
-              <span class="card__cost">690 руб.</span>
-              <a class="card__link" href="#"><img class="card__link--image" src="img/cart.svg" width="20"
-                  height="19"></a>
+            <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+            <div class="card-wrapper">
+              <div class="card__text">
+                <h2 class="card__title"><a class="card__title-link" href="#">Корзинка для белья</a></h2>
+                <span class="card__params">Диаметр 15 см, высота 10 см</span>
+              </div>
+              <div class="card__footer">
+                <span class="card__cost">690 руб.</span>
+                <a class="card__link" href="#"><img class="card__link--image" src="img/cart.svg" width="20"
+                    height="19"></a>
+              </div>
             </div>
           </article>
         </li>
-        <li class="product-cards__item"></li>
+        <li class="product-cards__item">
         <article class="card">
-          <!-- <img class="card__img" src="img/photo-3-mobile.svg" alt="Большая корзинка для игрушек" width="290"
-        height="195"> -->
-          <h2 class="card__title"><a href="#">Большая корзинка для игрушек</a></h2>
-          <span class="card__params">Диаметр 30 см, высота 30см</span>
-          <div class="card__footer">
-            <span class="card__cost">1500 руб.</span>
-            <a class="card__link" href="#"><img class="card__link--image" src="img/cart.svg" width="20" height="19"></a>
+          <img class="card__img" src="img/photo-3-mobile.png" alt="Большая корзинка для игрушек" width="260"
+            height="195">
+          <div class="card-wrapper">
+            <div class="card__text">
+              <h2 class="card__title"><a class="card__title-link" href="#">Большая корзинка для игрушек</a></h2>
+              <span class="card__params">Диаметр 30 см, высота 30см</span>
+            </div>
+            <div class="card__footer">
+              <span class="card__cost">1 500 руб.</span>
+              <a class="card__link" href="#"><img class="card__link--image" src="img/cart.svg" width="20"
+                  height="19"></a>
+            </div>
           </div>
         </article>
+      </li>
       </ul>
     </section>
     <section class="process">
       <h2 class="process__title">Процесс производства</h2>
       <img class="process__image" src="img/video-mobile.png" alt="Видео процесса производства">
-      <p class="process__description">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
-      <a class="process__order" href="#">Сделать заказ</a>
+      <div class="process-wrapper">
+        <p class="process__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="process__order" href="#">Сделать заказ</a>
+    </div>
     </section>
-    <section class="modal">
+    <!-- <section class="modal">
       <form class="modal-form">
         <h2 class="modal-form__title"></h2>
         <span class="modal-form__sel-size">Выберите размер</span>
@@ -86,7 +111,7 @@
         </ul>
         <button class="modal-form__butn-add button">Добавить</button>
       </form>
-    </section>
+    </section> -->
   </main>
   <footer class="footer">
     <ul class="social">
