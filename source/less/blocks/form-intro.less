@@ -1,3 +1,32 @@
+.form-intro {
+  background-color: #f1f1f1;
+}
+
 .form-intro__title {
   .intro-title();
+}
+
+.form-intro__wrapper {
+  width: 100%;
+  padding-top: 1px;
+  padding-bottom: 42px;
+}
+
+@media only screen and (min-width: @tablet-width) {
+  .form-intro__title {
+    .title-tab();
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: @desktop-width) {
+  .form-intro__wrapper {
+    padding-top: 82px;
+    padding-bottom: 56px;
+  }
+
+  .form-intro__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

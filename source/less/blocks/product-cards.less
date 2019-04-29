@@ -13,7 +13,8 @@
 @media only screen and (min-width: @desktop-width) {
   .product-cards__list {
     margin-top: 80px;
-
+    margin-right: 0;
+    margin-left: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -22,5 +23,9 @@
 
   .product-cards__item {
     width: 315px;
+  }
+
+  .product-cards__wrapper {
+    .wrapper-desk();
   }
 }
