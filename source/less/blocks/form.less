@@ -4,21 +4,12 @@
   color: @col-grey;
 }
 
-.form__title {
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
-  color: @col-light;
-}
-
 .form__label {
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
-}
 
-.form__text-wrapper {
-  .wrapper-mob();
+  display: flex;
 }
 
 .form__input::placeholder,
@@ -30,10 +21,6 @@
   font-size: 14px;
   line-height: 16px;
   color: #ececec;
-}
-
-.form__send-order {
-  .button();
 }
 
 .form__group,
@@ -77,10 +64,6 @@
   }
 }
 
-.form__label {
-  display: flex;
-}
-
 .form__label-type:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -89,24 +72,19 @@
   margin-bottom: 48px;
 }
 
-.form__label-name {
-  display: block;
-  margin-bottom: 2px;
-}
-
 .form__input-text {
-border: none;
-padding: 15px 0;
-border-bottom: 2px solid #000000;
-border-top: 2px solid transparent;
-width: 100%;
+  border: none;
+  padding: 15px 0;
+  border-bottom: 2px solid #000000;
+  border-top: 2px solid transparent;
+  width: 100%;
 }
 
 .form__label-name {
   &--last {
     margin-bottom: 0;
   }
-
+  display: block;
   margin-bottom: 22px;
 }
 
@@ -130,10 +108,8 @@ width: 100%;
   text-transform: uppercase;
   background: none;
   width: 100%;
-}
-
-.form__send-order{
   margin-bottom: 55px;
+  .button();
 }
 
 @media only screen and (min-width: @tablet-width) {
@@ -270,7 +246,7 @@ width: 100%;
   }
 
   .form__title-phone {
-  margin-right: 116px;
+    margin-right: 116px;
   }
 
   .form__title-email {
@@ -309,16 +285,16 @@ width: 100%;
     width: 250px;
   }
 
-  .form__note{
-  font-size: 17px;
-  line-height: 30px;
-  margin-left: auto;
-  margin-bottom: 8px;
-}
+  .form__note {
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-bottom: 8px;
+  }
 }
 
 @media only screen and (min-width: @desktop-width) {
-  .form__text-wrapper  {
+  .form__text-wrapper {
     .wrapper-desk();
     padding-top: 124px;
     padding-bottom: 0;
