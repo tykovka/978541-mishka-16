@@ -24,6 +24,9 @@
   font-size: 17px;
   line-height: 24px;
   font-style: normal;
+
+  margin-bottom: 3px;
+  display: block;
 }
 
 .reviews__item-link {
@@ -32,20 +35,22 @@
   color: @col-grey;
 }
 
+.reviews__written {
+  font-size: 18px;
+}
+
 .reviews__control {
   width: 50%;
-  display: inline-block;
 
   background: none;
   border: 1px solid #ececec;
   height: 52px;
-
-  margin-top: 30px;
-  margin-bottom: 48px;
 }
 
-.reviews__control--early {
-  margin-right: -5px;
+.reviews__control-wrap {
+  display: flex;
+  margin-bottom: 37px;
+  margin-top: 30px;
 }
 
 @media only screen and (min-width: @tablet-width) {
