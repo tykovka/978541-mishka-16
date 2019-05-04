@@ -1,11 +1,11 @@
 .header {
   .wrapper-mob();
-  position: relative;
+  // position: relative;
 }
 
 .header__wrapper {
   width: 100%;
-  border-bottom: 1px solid #ececec;
+  // border-bottom: 1px solid #ececec;
 }
 
 .header__logo {
@@ -47,19 +47,23 @@
 
 @media only screen and (min-width: @tablet-width) {
   .header {
-    width: @tablet-width;
-    border-bottom: 1px solid #ececec;
+    width: 100%;
   }
 
   .header__wrapper {
     .wrapper-tab();
+    margin-bottom: 8px;
   }
 
   .header__menu {
-    // width: @tablet-width;
-    margin: 0;
     border-top: 1px solid #ececec;
   }
+
+  .header__menu-wrap {
+    .wrapper-tab();
+    position: relative;
+  }
+
 
   .header__menu-item:last-child {
     border-bottom: none;
@@ -77,6 +81,7 @@
 
   .header__menu-item {
     min-height: 89px;
+    padding-top: 17px;
     padding-left: 0;
     padding-right: 35px;
     border: none;
@@ -85,15 +90,17 @@
   .header__menu-link--cart {
     font-size: 17px;
     position: absolute;
-    right: 52px;
-    top: 30px;
+    right: 0;
+    top: -57px;
   }
 
   .header__menu-item--search {
     display: none;
   }
 
+
   .header__menu-list {
+    .wrapper-tab();
     display: flex;
     align-items: flex-start;
   }
@@ -106,7 +113,7 @@
   .header__delivery--out {
     display: block;
     position: absolute;
-    top: 91px;
+    top: 3px;
     right: 0;
     padding: 15px 0;
   }
@@ -114,7 +121,7 @@
 
 @media only screen and (min-width: @desktop-width) {
   .header {
-    width: @desktop-width;
+    box-sizing: border-box;
     border-bottom: 1px solid #ececec;
   }
 
@@ -123,17 +130,41 @@
     border: none;
   }
 
+  .header__menu-wrap {
+    .wrapper-desk();
+    position: relative;
+  }
+
   .header__logo {
     position: absolute;
     right: 50%;
   }
 
+  .header__menu-link--cart {
+    font-size: 17px;
+    position: absolute;
+    right: 2px;
+    top: 31px;
+  }
+
+  .header__delivery--out {
+    display: block;
+    position: absolute;
+    top: 91px;
+    right: 0;
+    padding: 15px 0;
+  }
+
+
   .header__menu-more {
+    .wrapper-desk();
+
     display: flex;
     align-items: flex-start;
-
     list-style: none;
+
     padding: 0;
+    margin-top: 14px;
   }
 
   .header__menu-link {
@@ -144,6 +175,7 @@
 
   .header__menu-list {
     display: flex;
+    .wrapper-desk();
   }
 
   .header__menu-item {
@@ -176,9 +208,5 @@
     font-weight: bold;
 
     padding-right: 61px;
-  }
-
-  .header__delivery--out {
-    right: 50px;
   }
 }
