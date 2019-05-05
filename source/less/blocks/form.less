@@ -12,23 +12,23 @@
   display: flex;
 }
 
-.form__input::placeholder,
-.form__text::placeholder {
+.form__text::placeholder,
+.form__input-text::placeholder {
   .form-placeholder();
 }
 
 .form__note {
   font-size: 14px;
   line-height: 16px;
-  color: #ececec;
+  color: #444444;
 }
 
 .form__group,
 .form__color-block {
   .wrapper-mob();
   padding: 0;
-  margin-bottom: 7px;
-  margin-top: 32px;
+  margin-bottom: 44px;
+  margin-top: 24px;
   border: none;
 }
 
@@ -37,6 +37,7 @@
 }
 
 .form__title {
+  padding: 0;
   .form-title();
 
   &-type {
@@ -52,11 +53,11 @@
   }
 
   &-phone {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   &-email {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   &-more {
@@ -64,26 +65,36 @@
   }
 }
 
+.form__title-type::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  align-self: center;
+  background-color: @col-light;
+}
+
 .form__label-type:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .form__label-color:not(:last-child) {
-  margin-bottom: 48px;
+  margin-bottom: 43px;
 }
 
 .form__input-text {
   border: none;
-  padding: 15px 0;
+  padding: 17px 0;
   border-bottom: 2px solid #000000;
   border-top: 2px solid transparent;
   width: 100%;
 }
 
 .form__label-name {
+
   &--last {
     margin-bottom: 0;
   }
+
   display: block;
   margin-bottom: 22px;
 }
@@ -94,6 +105,41 @@
   border: 2px solid #000000;
   padding: 13px 15px;
 }
+
+.form__label-type-wrap {
+  margin-left: 63px;
+}
+
+.form__label-color-wrap {
+  margin-top: 36px;
+  margin-left: 63px;
+}
+
+.form__group {
+
+  &-name-wrap{
+    margin-top: -2px;
+  }
+
+  &-name {
+    margin-bottom: 0;
+  }
+
+  &-phone {
+    margin-top: 11px;
+    margin-bottom: 32px;
+  }
+
+  &-email {
+    margin-bottom: 32px;
+  }
+
+  &-more {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
 
 .form__text-wrapper {
   .wrapper-mob();
@@ -109,6 +155,7 @@
   background: none;
   width: 100%;
   margin-bottom: 55px;
+  margin-top: 27px;
   .button();
 }
 
@@ -218,6 +265,7 @@
   }
 
   .form__input-text {
+
     margin-left: 15px;
   }
 
