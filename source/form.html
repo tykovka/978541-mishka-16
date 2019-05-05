@@ -11,16 +11,18 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo" href="index.html">
+      <a class="header__logo">
         <img class="header__logo-img" src="" alt="Мишка">
       </a>
-      <nav class="header__menu">
+    </div>
+    <nav class="header__menu">
+      <div class="header__menu-wrap">
         <ul class="header__menu-list">
           <li class="header__menu-item">
             <a class="header__menu-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Вязание на заказ</a>
+            <a class="header__menu-link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="header__menu-item header__menu-item--search">
             <a class="header__menu-link" href="#">Поиск по сайту</a>
@@ -29,21 +31,22 @@
             <a class="header__menu-link header__menu-link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-      </nav>
-    </div>
+        <span class="header__delivery header__delivery--out">Бесплатная доставка по России</span>
+      </div>
+    </nav>
   </header>
   <main class="main">
     <section class="form-intro">
-        <div class="intro__second-menu">
-            <ul class="header__menu-more header__menu-more--out">
-              <li class="header__menu-more-item">
-                <a class="header__menu-more-link" href="#">Новые поступления</a>
-              </li>
-              <li class="header__menu-more-item">
-                <a class="header__menu-more-link" href="#">Распродажа</a>
-              </li>
-            </ul>
-          </div>
+      <div class="intro__second-menu">
+        <ul class="header__menu-more header__menu-more--out">
+          <li class="header__menu-more-item">
+            <a class="header__menu-more-link" href="#">Новые поступления</a>
+          </li>
+          <li class="header__menu-more-item">
+            <a class="header__menu-more-link" href="#">Распродажа</a>
+          </li>
+        </ul>
+      </div>
       <div class="form-intro__wrapper">
         <h2 class="form-intro__title">Вязание на заказ</h2>
       </div>
@@ -119,14 +122,14 @@
       <div class="form__group-phoneemail-wrap">
         <fieldset class="form__group form__group-phone">
           <div class="form__group-phone-wrap">
-            <legend class="form__title form__title-phone">Тел*</legend>
+            <legend class="form__title form__title-phone">Тел</legend>
             <input class="form__input-text form__input-phone" type="text" name="phone-number"
               placeholder="+7 XXX XXX XX XX*">
           </div>
         </fieldset>
         <fieldset class="form__group form__group-email">
           <div class="form__group-email-wrap">
-            <legend class="form__title form__title-email">E-mail*</legend>
+            <legend class="form__title form__title-email">E-mail</legend>
             <input class="form__input-text form__input-email " type="text" name="email" placeholder="Ваш Email*">
           </div>
         </fieldset>
@@ -134,7 +137,9 @@
       <fieldset class="form__group form__group-more">
         <div class="form__group-more-wrap">
           <legend class="form__title form__title-more">Доп</legend>
+        <div class="form__text-wrap">
           <textarea class="form__text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
         </div>
       </fieldset>
       <div class="form__footer-wrapper">

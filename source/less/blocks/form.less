@@ -168,7 +168,7 @@
   .form__description {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 56px;
+    margin-bottom: 53px;
   }
 
   .form__group-type-wrap {
@@ -179,6 +179,7 @@
   .form__group-type {
     margin-top: 0;
     padding-right: 0;
+    margin-bottom: 30px;
   }
 
   .form__label {
@@ -191,6 +192,32 @@
     // width: 167px;
     margin: 0;
     margin-top: 13px;
+
+    &-color {
+      margin-top: -6px;
+    }
+
+    &-more {
+      // margin-right: 60px;
+      width: 100px;
+      margin-top: 30px;
+    }
+
+    &-phone {
+      margin-right: 116px;
+    }
+
+    &-email {
+      width: 100px;
+      margin-right: 52px;
+      margin-top: 1px;
+    }
+  }
+
+  .form__text::placeholder,
+  .form__input-text::placeholder {
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .form__label-type {
@@ -203,15 +230,11 @@
   .form__label-type-wrap {
     display: flex;
     flex-direction: column;
-    margin-left: 107px;
+    margin-left: 130px;
   }
 
   .form__label-type:not(:last-child) {
-    margin-bottom: 19px;
-  }
-
-  .form__title-color {
-    margin-top: -6px;
+    margin-bottom: 22px;
   }
 
   .form__color-block {
@@ -223,7 +246,7 @@
   .form__color-block-wrap {
     .wrapper-tab();
     display: flex;
-    padding-top: 63px;
+    padding-top: 47px;
     padding-bottom: 11px;
   }
 
@@ -231,20 +254,24 @@
     width: 501px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 180px;
+    margin-left: 204px;
+    margin-top: 18px;
   }
 
   .form__label-color {
-    width: 165px;
+    width: 150px;
   }
 
   .form__label-color--right {
-    margin-left: 98px;
+    margin-left: 112px;
   }
-
 
   .form__label-color:not(:last-child) {
     margin-bottom: 57px;
+  }
+
+  .form__group-name {
+    margin-top: 50px;
   }
 
   .form__group-name-wrap {
@@ -252,20 +279,38 @@
     display: flex;
   }
 
-  .form__label-name-wrap {
-    margin-left: 100px;
-    width: 501px;
-  }
-
   .form__label-name {
     display: flex;
     align-items: center;
     margin-top: 0;
-    margin-bottom: 27px;
+    margin-bottom: 37px;
+  }
+
+  .form__label-name-wrap {
+    margin-left: 125px;
+    width: 501px;
+    padding-top: 13px;
   }
 
   .form__input-text {
+    margin-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    padding-left: 21px;
+  }
 
+  .form__input-phone {
+    background: #f1f1f1;
+    width: 501px;
+    margin-left: 19px;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+  .form__input-email {
+    background: #f1f1f1;
+    width: 501px;
+    padding-left: 18px;
     margin-left: 15px;
   }
 
@@ -287,58 +332,51 @@
     padding-bottom: 50px;
   }
 
-  .form__input-phone,
-  .form__input-email {
-    background: #f1f1f1;
-    width: 501px;
-  }
-
-  .form__title-phone {
-    margin-right: 116px;
-  }
-
-  .form__title-email {
-    width: 100px;
-    margin-right: 52px;
-  }
-
   .form__group-phoneemail-wrap {
     width: 100%;
     background: #f1f1f1;
   }
 
-  .form__group-more-wrap {
-    .wrapper-tab();
-  }
-
-  .form__title-more {
-    margin-right: 60px;
-    width: 100px;
-  }
-
   .form__text {
     width: 501px;
-    margin-left: 165px;
+    margin-left: 66px;
+    margin-top: 20px;
   }
 
   .form__footer-wrapper {
     .wrapper-tab();
     display: flex;
     align-items: center;
-    margin-bottom: 49px;
+    margin-bottom: -19px;
   }
 
   .form__send-order {
     order: -1;
-    width: 250px;
+    width: 230px;
+    margin-top: 41px;
   }
 
   .form__note {
     font-size: 17px;
     line-height: 30px;
     margin-left: auto;
-    margin-bottom: 8px;
+    margin-bottom: 22px;
   }
+
+  .form__group-email {
+    margin-top: 10px;
+  }
+
+  .form__group-email-wrap {
+    padding-top: 1px;
+  }
+
+  .form__group-more-wrap {
+    .wrapper-tab();
+    display: flex;
+  }
+
+
 }
 
 @media only screen and (min-width: @desktop-width) {
