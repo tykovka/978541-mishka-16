@@ -1,0 +1,32 @@
+.intro__menu-more--out {
+  display: none;
+}
+
+@media only screen and (min-width: @desktop-width) {
+  .intro__menu-more--out {
+    display: block;
+  }
+
+  .intro__menu-more {
+    .wrapper-desk();
+
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    padding-top: 14px;
+  }
+
+  .intro__menu-more-item {
+    margin-top: 2px;
+  }
+
+  .intro__menu-more-link {
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: bold;
+
+    padding-right: 61px;
+  }
+}
