@@ -11,29 +11,45 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <!-- <a class="header__logo" href="index.html">
+      <a class="header__logo" href="index.html">
         <img class="header__logo-img" src="" alt="Мишка">
-      </a> -->
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="#">Вязание на заказ</a>
-          </li>
-          <li class="header__menu-item header__menu-item--search">
-            <a class="header__menu-link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="header__menu-item header__menu-item--cart">
-            <a class="header__menu-link header__menu-link--cart" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
+      </a>
     </div>
+    <nav class="header__menu">
+        <div class="header__menu-wrap--big">
+          <div class="header__menu-wrap">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="header__menu-item header__menu-item--search">
+                <a class="header__menu-link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="header__menu-item header__menu-item--cart">
+                <a class="header__menu-link header__menu-link--cart" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+            <span class="header__delivery header__delivery--out">Бесплатная доставка по России</span>
+          </div>
+        </div>
+          <div class="header__second-menu">
+              <ul class="header__menu-more header__menu-more--out">
+                <li class="header__menu-more-item">
+                  <a class="header__menu-more-link" href="#">Новые поступления</a>
+                </li>
+                <li class="header__menu-more-item">
+                  <a class="header__menu-more-link" href="#">Распродажа</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
   </header>
   <main class="main">
     <section class="form-intro">
+
       <div class="form-intro__wrapper">
         <h2 class="form-intro__title">Вязание на заказ</h2>
       </div>
@@ -48,11 +64,11 @@
           <legend class="form__title form__title-type">Тип</legend>
           <div class="form__label-type-wrap">
             <label class="form__label form__label-type">
-              <input class="form__input" type="radio" name="acces-interior" checked>
+              <input class="form__input visually-hidden" type="radio" name="acces-interior" checked>
               Аксессуар для интерьера
             </label>
             <label class="form__label form__label-type">
-              <input class="form__input" type="radio" name="child-toy">
+              <input class="form__input visually-hidden" type="radio" name="child-toy">
               Детская игрушка
             </label>
           </div>
@@ -60,30 +76,30 @@
       </fieldset>
       <fieldset class="form__color-block">
         <div class="form__color-block-wrap">
-          <legend class="form__title form__title-color">Цвет</legend>
+          <legend class="form__title form__title-typeform__title-color">Цвет</legend>
           <div class="form__label-color-wrap">
             <label class="form__label form__label-color form__label-color--white">
-              <input class="form__color-input" type="checkbox" name="color" checked>
+              <input class="form__color-input  visually-hidden" type="checkbox" name="color" checked>
               Белый
             </label>
-            <label class="form__label form__label-color form__label-color--right">
-              <input class="form__input" type="checkbox" name="color" checked>
+            <label class="form__label form__label-color form__label-color--right form__label-color--mid">
+              <input class="form__input visually-hidden" type="checkbox" name="color" checked>
               Серый
             </label>
-            <label class="form__label form__label-color ">
-              <input class="form__input" type="checkbox" name="color">
-              "Тифанни"
+            <label class="form__label form__label-color form__label-color--last ">
+              <input class="form__input visually-hidden" type="checkbox" name="color">
+              «Тифанни»
             </label>
             <label class="form__label form__label-color form__label-color--right">
-              <input class="form__input" type="checkbox" name="color">
+              <input class="form__input visually-hidden" type="checkbox" name="color">
               Черный
             </label>
-            <label class="form__label form__label-color ">
-              <input class="form__input" type="checkbox" name="color">
+            <label class="form__label form__label-color form__label-color--mid ">
+              <input class="form__input visually-hidden" type="checkbox" name="color">
               Розовый
             </label>
-            <label class="form__label form__label-color form__label-color--right">
-              <input class="form__input" type="checkbox" name="color">
+            <label class="form__label form__label-color form__label-color--right form__label-color--last">
+              <input class="form__input visually-hidden" type="checkbox" name="color">
               Оранжевый
             </label>
       </fieldset>
@@ -124,7 +140,9 @@
       <fieldset class="form__group form__group-more">
         <div class="form__group-more-wrap">
           <legend class="form__title form__title-more">Доп</legend>
+        <div class="form__text-wrap">
           <textarea class="form__text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
         </div>
       </fieldset>
       <div class="form__footer-wrapper">
