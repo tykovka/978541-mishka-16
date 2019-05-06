@@ -38,7 +38,8 @@
   color: #000000;
 }
 
-.header__delivery--out {
+.header__delivery--out,
+.header__menu-more--out {
   display: none;
 }
 
@@ -48,13 +49,31 @@
   }
 
   .header__wrapper {
-    .wrapper-tab();
+    // .wrapper-tab();
     margin-bottom: 8px;
+  }
+
+  .header__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .header__menu-item {
+    display: block;
+    background: none;
+
+    min-height: auto;
+    padding: 0;
+    padding-top: 17px;
+    padding-left: 0;
+    margin-right: 35px;
+    border: none;
   }
 
   .header__menu {
     border-top: 1px solid #ececec;
-    background: #f1f1f1;
   }
 
   .header__menu-wrap {
@@ -76,15 +95,6 @@
     font-size: 15px;
   }
 
-  .header__menu-item {
-    min-height: 89px;
-    padding-top: 17px;
-    padding-left: 0;
-    padding-right: 35px;
-    border: none;
-
-    background: #f1f1f1;
-  }
 
   .header__menu-link--cart {
     font-size: 17px;
@@ -95,12 +105,6 @@
 
   .header__menu-item--search {
     display: none;
-  }
-
-  .header__menu-list {
-    .wrapper-tab();
-    display: flex;
-    align-items: flex-start;
   }
 
   .header__delivery {
@@ -120,7 +124,6 @@
 @media only screen and (min-width: @desktop-width) {
   .header {
     box-sizing: border-box;
-    border-bottom: 1px solid #ececec;
   }
 
   .header__wrapper {
@@ -130,7 +133,13 @@
 
   .header__menu-wrap {
     .wrapper-desk();
+
     position: relative;
+  }
+
+  .header__menu-wrap--big {
+    width: 100%;
+    border-bottom: 1px solid #ececec;
   }
 
   .header__logo {
@@ -162,6 +171,7 @@
   .header__menu-list {
     display: flex;
     .wrapper-desk();
+    margin-bottom: 32px;
   }
 
   .header__menu-item {
@@ -184,5 +194,36 @@
   .header__menu {
     border: none;
     background: none;
+  }
+
+  .header__menu-more--out {
+    display: block;
+  }
+
+  .header__menu-more {
+    .wrapper-desk();
+
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    padding-top: 14px;
+  }
+
+  .header__menu-more-item {
+    margin-top: 2px;
+  }
+
+  .header__menu-more-link {
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: bold;
+
+    padding-right: 61px;
+  }
+
+  .header__second-menu {
+    margin-bottom: -41px;
   }
 }
