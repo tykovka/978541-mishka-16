@@ -12,8 +12,15 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo">
-        <img class="header__logo-img" src="" alt="Мишка">
+        <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
+          </picture>
       </a>
+      <button class="header__toggle header__toggle--open ">
+          <span class="visually-hidden">Раскрыть меню</span>
+        </button>
     </div>
     <nav class="header__menu">
     <div class="header__menu-big">
@@ -26,10 +33,15 @@
             <a class="header__menu-link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="header__menu-item header__menu-item--search">
-            <a class="header__menu-link" href="#">Поиск по сайту</a>
+            <a class="header__menu-link header__menu-link--search" href="#">
+              <span class="header__menu-text--search">Поиск по сайту</span>
+            </a>
+
           </li>
           <li class="header__menu-item header__menu-item--cart">
-            <a class="header__menu-link header__menu-link--cart" href="#">Корзина: пока пуста</a>
+            <a class="header__menu-link header__menu-link--cart" href="#">
+              <span class="header__menu-text--cart">Корзина: пока пуста</span>
+            </a>
           </li>
         </ul>
         <span class="header__delivery header__delivery--out">Бесплатная доставка по России</span>

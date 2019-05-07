@@ -12,40 +12,49 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
-        <img class="header__logo-img" src="" alt="Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
+        </picture>
       </a>
     </div>
     <nav class="header__menu">
-        <div class="header__menu-big">
-          <div class="header__menu-wrap">
-            <ul class="header__menu-list">
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="form.html">Вязание на заказ</a>
-              </li>
-              <li class="header__menu-item header__menu-item--search">
-                <a class="header__menu-link" href="#">Поиск по сайту</a>
-              </li>
-              <li class="header__menu-item header__menu-item--cart">
-                <a class="header__menu-link header__menu-link--cart" href="#">Корзина: пока пуста</a>
-              </li>
-            </ul>
-            <span class="header__delivery header__delivery--out">Бесплатная доставка по России</span>
-          </div>
+      <div class="header__menu-big">
+        <div class="header__menu-wrap">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="header__menu-item header__menu-item--search">
+              <a class="header__menu-link header__menu-link--search" href="#">
+                <span class="header__menu-text--search">Поиск по сайту</span>
+              </a>
+
+            </li>
+            <li class="header__menu-item header__menu-item--cart">
+              <a class="header__menu-link header__menu-link--cart" href="#">
+                <span class="header__menu-text--cart">Корзина: пока пуста</span>
+              </a>
+            </li>
+          </ul>
+          <span class="header__delivery header__delivery--out">Бесплатная доставка по России</span>
         </div>
-          <div class="header__second-menu">
-              <ul class="header__menu-more header__menu-more--out">
-                <li class="header__menu-more-item">
-                  <a class="header__menu-more-link" href="#">Новые поступления</a>
-                </li>
-                <li class="header__menu-more-item">
-                  <a class="header__menu-more-link" href="#">Распродажа</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
+      </div>
+      <div class="header__second-menu">
+        <ul class="header__menu-more header__menu-more--out">
+          <li class="header__menu-more-item">
+            <a class="header__menu-more-link" href="#">Новые поступления</a>
+          </li>
+          <li class="header__menu-more-item">
+            <a class="header__menu-more-link" href="#">Распродажа</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="main">
     <section class="form-intro">
@@ -140,9 +149,9 @@
       <fieldset class="form__group form__group-more">
         <div class="form__group-more-wrap">
           <legend class="form__title form__title-more">Доп</legend>
-        <div class="form__text-wrap">
-          <textarea class="form__text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </div>
+          <div class="form__text-wrap">
+            <textarea class="form__text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </div>
       </fieldset>
       <div class="form__footer-wrapper">
