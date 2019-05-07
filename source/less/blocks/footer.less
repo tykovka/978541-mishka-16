@@ -1,14 +1,50 @@
 .footer {
-  height: 160px; //временно//
+  // height: 160px; //временно//
   background-color: #f1f1f1;
 }
 
-.footer__develop-text {
-  font-size: 19px;
-  line-height: 18px;
-  font-weight: bold;
+.footer__wrap {
+  margin: 0 30px;
+  padding-top: 27px;
 }
 
 .footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   list-style: none;
+  padding: 0;
+  width: 150px;
+  margin-left: 57px;
+  margin-top: 0;
+}
+
+.footer__social-item {
+  margin-right: 8px;
+}
+
+.footer__develop {
+  position: relative;
+  margin-top: 20px;
+
+  border-top: 1px solid#ececec;
+}
+
+.footer__develop-text {
+  display: block;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-top: 27px;
+  padding-left: 37px;
+  padding-bottom: 33px;
+}
+
+.footer__develop-logo--img {
+  position: absolute;
+  top: 21px;
+  right: 39px;
+
+  fill:@col-light;
+
 }
