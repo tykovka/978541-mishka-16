@@ -7,6 +7,7 @@
 
 .catalog-intro__title {
   .intro-title();
+  padding-top: 4px;
 }
 
 @media only screen and (min-width: @tablet-width) {
@@ -15,6 +16,18 @@
     padding-top: 96px;
     margin-top: -42px;
     padding-bottom: 8px;
+    position: relative;
+  }
+
+  .catalog-intro::after {
+    position: absolute;
+    content: " ";
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background: url("../img/bg-zigzag-fill.svg");
+    background-size: 768px 26px;
   }
 
   .catalog-intro__title {
@@ -22,6 +35,7 @@
     line-height: 50px;
     margin-top: 0;
     margin-bottom: 71px;
+    padding-top: 0;
   }
 }
 
@@ -37,5 +51,9 @@
     line-height: 57px;
     padding-top: 91px;
     padding-bottom: 102px;
+  }
+
+  .catalog-intro::after {
+    background-size: 1150px 34px;
   }
 }

@@ -11,9 +11,10 @@
 }
 
 .header__logo {
+  z-index: 2;
   display: block;
   height: 79px;
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -285,10 +286,6 @@
     margin-right: 13px;
   }
 
-  .header__menu-link {
-    font-size: 15px;
-  }
-
   .header__delivery--out {
     display: block;
     position: absolute;
@@ -330,6 +327,8 @@
   .header__menu {
     border: none;
     background: none;
+    position: relative;
+    z-index: 1;
   }
 
   .header__menu-more--out {
