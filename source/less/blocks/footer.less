@@ -44,7 +44,7 @@
   top: 21px;
   right: 39px;
 
-  fill:@col-light;
+  fill: @col-light;
 }
 
 .footer__logo {
@@ -71,7 +71,7 @@
     margin-top: 17px;
   }
 
-  .footer__develop-text  {
+  .footer__develop-text {
     padding: 0;
   }
 
@@ -83,7 +83,12 @@
 
   .footer__develop-logo--img {
     top: -3px;
-    right: 0px;
+    right: 0;
   }
 }
 
+@media only screen and (min-width: @desktop-width) {
+  .footer__wrap {
+    .wrapper-desk();
+  }
+}
