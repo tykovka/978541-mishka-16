@@ -8,6 +8,7 @@
   line-height: 30px;
   font-weight: bold;
   margin-bottom: 25px;
+  margin-left: -2px;
 }
 
 .contacts__email-key,
@@ -50,17 +51,29 @@
 
 .contacts__written-wrap {
   .wrapper-mob;
-  margin-top: 51px;
+  margin-top: 35px;
   margin-bottom: 39px;
 }
 
 .contacts__text-wrap {
   .wrapper-mob();
+  margin-bottom: 37px;
 }
 
 .contacts__written {
   font-size: 18px;
   background-color: none;
+}
+
+.contacts__map {
+  position: relative;
+  // .wrapper-mob();
+}
+
+.contacts__map-point {
+  position: absolute;
+  top: 30%;
+  left: 40%;
 }
 
 .contacts__map-iframe {
@@ -73,7 +86,7 @@
 @media only screen and (min-width: @tablet-width) {
   .contacts {
     box-sizing: border-box;
-    margin-top: 162px;
+    margin-top: 145px;
   }
 
   // .contacts-wrap {
@@ -82,6 +95,7 @@
 
   .contacts__text-wrap {
     .wrapper-tab();
+    position: relative;
   }
 
   .contacts__title {
@@ -89,6 +103,17 @@
 
     margin-bottom: 49px;
     margin-left: -5px;
+  }
+
+  .contacts__title::after {
+    content: " ";
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='46.68px' height='81.691px' viewBox='-11.34 -28.346 46.68 81.691' enable-background='new -11.34 -28.346 46.68 81.691' xml:space='preserve'%3E%3Cg id='miu'%3E%3Cg id='Artboard-1' transform='translate(-755.000000, -443.000000)'%3E%3Cg id='slice' transform='translate(215.000000, 119.000000)'%3E%3C/g%3E%3Cg id='editor-flag-triangle-notification-glyph'%3E%3Cpath fill='%2363D1BB' d='M751.439,418.545v38.9l38.9-19.451L751.439,418.545z M743.66,496.346v-81.691h3.805v81.691H743.66z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg%3E%3Crect x='-11.34' y='-28.346' fill='%23231F20' width='3.805' height='81.691'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    width: 60px;
+    height: 83px;
   }
 
   .contacts__email-key,
@@ -120,7 +145,14 @@
   }
 
   .contacts__map {
+    margin: 0;
     margin-top: 56px;
+  }
+
+  .contacts__map-point {
+    position: absolute;
+    top: 31%;
+    left: 46%;
   }
 
   .contacts__written-wrap {
@@ -140,7 +172,7 @@
 @media only screen and (min-width: @desktop-width) {
   .contacts {
     .wrapper-desk();
-    margin-top: 170px;
+    margin-top: 101px;
     position: relative;
     margin-bottom: 102px;
   }
@@ -161,6 +193,11 @@
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .contacts__title::after {
+    left: 63px;
+    top: 37px;
   }
 
   .contacts__map {
