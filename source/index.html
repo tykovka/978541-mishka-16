@@ -35,12 +35,18 @@
             <li class="header__menu-item header__menu-item--search">
               <a class="header__menu-link header__menu-link--search" href="#">
                 <span class="header__menu-text--search">Поиск по сайту</span>
+                <svg class="header__search-svg" width="17.6" height="17.6">
+                  <use href="img/sprite.svg#icon-search" xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
               </a>
 
             </li>
             <li class="header__menu-item header__menu-item--cart">
               <a class="header__menu-link header__menu-link--cart" href="#">
                 <span class="header__menu-text--cart">Корзина: пока пуста</span>
+                <svg class="header__cart-svg" width="20" height="20" >
+                  <use href="img/sprite.svg#icon-cart" xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -133,8 +139,18 @@
           </article>
         </div>
         <div class="reviews__control-wrap">
-          <a href="#" class="reviews__control reviews__control--early"></a>
-          <a href="#" class="reviews__control reviews__control--next"></a>
+          <a href="#" class="reviews__control reviews__control--early">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            <svg class="reviews__control--early-svg" width="50" height="30">
+              <use href="img/sprite.svg#icon-left-arrow" xlink:href="img/sprite.svg#icon-left-arrow"> </use>
+            </svg>
+          </a>
+          <a href="#" class="reviews__control reviews__control--next">
+            <span class="visually-hidden">Следуюший отзыв</span>
+            <svg class="reviews__control--next-svg" width="50" height="30">
+              <use href="img/sprite.svg#icon-right-arrow" xlink:href="img/sprite.svg#icon-right-arrow"></use>
+            </svg>
+          </a>
         </div>
         <a href="#" class="reviews__written button">Написать</a>
       </div>

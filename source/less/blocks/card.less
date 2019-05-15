@@ -42,11 +42,45 @@
   // margin-bottom: 26px;
 }
 
-
 .card__cost {
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+}
+
+.card__wrapper-big {
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 8px 8px 2px #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 2px 8px 2px #ececec;
+  }
+}
+
+.card__cart-svg {
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.card__title-link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.card__button {
+  position: relative;
 }
 
 @media only screen and (min-width: @tablet-width) {
@@ -114,6 +148,10 @@
   .card__cost {
     font-size: 17px;
   }
+
+  // .card:hover {
+
+  // }
 }
 
 @media only screen and (min-width: @desktop-width) {

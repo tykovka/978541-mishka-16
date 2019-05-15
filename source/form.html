@@ -23,41 +23,47 @@
         </button>
     </div>
     <nav class="header__menu">
-      <div class="header__menu-big">
-        <div class="header__menu-wrap">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="header__menu-item header__menu-item--search">
-              <a class="header__menu-link header__menu-link--search" href="#">
-                <span class="header__menu-text--search">Поиск по сайту</span>
-              </a>
+        <div class="header__menu-big">
+          <div class="header__menu-wrap">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="header__menu-item header__menu-item--search">
+                <a class="header__menu-link header__menu-link--search" href="#">
+                  <span class="header__menu-text--search">Поиск по сайту</span>
+                  <svg class="header__search-svg" width="17.6" height="17.6">
+                    <use href="img/sprite.svg#icon-search" xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </a>
 
+              </li>
+              <li class="header__menu-item header__menu-item--cart">
+                <a class="header__menu-link header__menu-link--cart" href="#">
+                  <span class="header__menu-text--cart">Корзина: пока пуста</span>
+                  <svg class="header__cart-svg" width="20" height="20" >
+                    <use href="img/sprite.svg#icon-cart" xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <span class="header__delivery header__delivery--out">Бесплатная доставка по России</span>
+          </div>
+        </div>
+        <div class="header__second-menu">
+          <ul class="header__menu-more header__menu-more--out">
+            <li class="header__menu-more-item">
+              <a class="header__menu-more-link" href="#">Новые поступления</a>
             </li>
-            <li class="header__menu-item header__menu-item--cart">
-              <a class="header__menu-link header__menu-link--cart" href="#">
-                <span class="header__menu-text--cart">Корзина: пока пуста</span>
-              </a>
+            <li class="header__menu-more-item">
+              <a class="header__menu-more-link" href="#">Распродажа</a>
             </li>
           </ul>
-          <span class="header__delivery header__delivery--out">Бесплатная доставка по России</span>
         </div>
-      </div>
-      <div class="header__second-menu">
-        <ul class="header__menu-more header__menu-more--out">
-          <li class="header__menu-more-item">
-            <a class="header__menu-more-link" href="#">Новые поступления</a>
-          </li>
-          <li class="header__menu-more-item">
-            <a class="header__menu-more-link" href="#">Распродажа</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
   </header>
   <main class="main">
     <section class="form-intro">
