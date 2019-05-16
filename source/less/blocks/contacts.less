@@ -38,6 +38,14 @@
   padding-bottom: 4px;
 
   border-bottom: 1px solid @col-light;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__email-wrap {
@@ -82,17 +90,7 @@
   border: none;
 }
 
-.contacts__email-value {
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.contacts__email-link:hover  {
+.contacts__email-link:hover {
   color: #46c1ae;
 }
 
@@ -101,10 +99,6 @@
     box-sizing: border-box;
     margin-top: 145px;
   }
-
-  // .contacts-wrap {
-  //   .wrapper-tab();
-  // }
 
   .contacts__text-wrap {
     .wrapper-tab();

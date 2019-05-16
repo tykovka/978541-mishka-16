@@ -8,15 +8,13 @@
 .card__wrapper {
   padding-top: 25px;
   padding-left: 28px;
-  padding-bottom: 27px;
+  padding-bottom: 26px;
   padding-right: 27px;
 }
 
 .card__title {
   margin: 0;
   margin-bottom: 4px;
-  // margin-top: 24px;
-  // margin-bottom: 5px;
 }
 
 .card__text {
@@ -27,6 +25,14 @@
 .card__title-link {
   .item-title();
   color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__params {
@@ -50,6 +56,7 @@
 
 .card__wrapper-big {
   cursor: pointer;
+
   &:hover {
     box-shadow: 0 8px 8px 2px #ececec;
   }
@@ -60,18 +67,10 @@
 }
 
 .card__cart-svg {
+  cursor: pointer;
+
   &:hover {
     fill: #63d1bb;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.card__title-link {
-  &:hover {
-    opacity: 0.6;
   }
 
   &:active {
@@ -98,9 +97,6 @@
     display: flex;
   }
 
-  // .card:last-child {
-  //   margin-bottom: 54px;
-  // }
 
   .card__wrapper {
     display: flex;
@@ -148,10 +144,6 @@
   .card__cost {
     font-size: 17px;
   }
-
-  // .card:hover {
-
-  // }
 }
 
 @media only screen and (min-width: @desktop-width) {
@@ -160,6 +152,7 @@
     box-sizing: border-box;
     display: flex;
     margin-left: 0;
+    margin-bottom: 57px;
     // border: 1px solid #ececec;
   }
 
@@ -167,6 +160,7 @@
     padding-top: 26px;
     padding-left: 29px;
     padding-right: 32px;
+    padding-bottom: 23px;
     min-height: 196px;
     border: none;
     width: 315px;

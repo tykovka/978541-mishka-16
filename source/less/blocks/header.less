@@ -16,6 +16,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .header__toggle {
@@ -76,48 +84,25 @@
   color: #e4e4e4;
 }
 
-.header__logo {
-  &[href]:hover{
-    opacity: 0.6;
-  }
-
-  &[href]:active{
-    opacity: 0.3;
-  }
-}
-
-.header__menu-link:hover{
+.header__menu-link:hover {
   .header__search-svg,
   .header__cart-svg {
     fill: #63d1bb;
   }
-
 }
 
-// .header__search-svg:hover,
-// .header__cart-svg:hover {
-//   fill: #63d1bb;
-// }
-
-.header__menu-link:active{
+.header__menu-link:active {
   .header__search-svg,
   .header__cart-svg {
     opacity: 0.3;
   }
-
 }
-
-// .header__search-svg:active,
-// .header__cart-svg:active {
-//   fill: #63d1bb;
-// }
-
 
 .header__menu-text--search {
   display: block;
 }
 
-.header__search-svg{
+.header__search-svg {
   position: absolute;
   top: -20px;
   left: -43px;
@@ -127,10 +112,6 @@
   position: absolute;
   top: 4px;
   left: -45px;
-}
-
-.header__menu-link {
-  position: relative;
 }
 
 .header__delivery--out,
@@ -200,10 +181,9 @@
     width: 113px;
     height: 46px;
     display: block;
-
   }
 
-  .header__cart-svg{
+  .header__cart-svg {
     top: 35px;
     left: 32px;
   }
