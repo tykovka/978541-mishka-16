@@ -70,6 +70,22 @@
   width: 150px;
 }
 
+.intro__item:active {
+  .intro__item-link--light {
+    color: #97e2d2;
+  }
+
+  .intro__item-link--dark {
+    color: #8dd5c9;
+  }
+}
+
+.intro__item--dark:hover,
+.intro__item--light:hover {
+  transform: translateY(-5px);
+}
+
+
 @media only screen and (min-width: @tablet-width) {
   .intro {
     background-image: url("../img/hero-tablet@1x.jpg");
