@@ -218,6 +218,10 @@ input[type="radio"]:checked ~ .form__radio::before {
   display: block;
 }
 
+input[type="radio"]:not(:checked) ~ .form__radio::before {
+  display: none;
+}
+
 input[type="radio"]:disabled ~ .form__radio,
 input[type="checkbox"]:disabled ~ .form__checkbox {
   border-color: #c7c7c7;
