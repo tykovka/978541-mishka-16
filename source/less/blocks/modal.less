@@ -1,0 +1,124 @@
+.modal {
+  &--show {
+    display: block;
+  }
+  display: none;
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 568px;
+  padding: 36px 30px 46px;
+  // border: 1px solid #c6c6c6;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba(0,1,1,.25);
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 0 55px;
+}
+
+.modal__choose-size {
+  font-size: 15px;
+  line-height: 30px;
+  color: @col-grey;
+  text-align: center;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.modal__size-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 31px;
+}
+
+.modal__size-item {
+  &--active {
+    border-color: @col-light;
+  }
+
+  &:not(.modal__size-item--active):hover {
+    border-color: #c7c7c7;
+  }
+
+  &:not(.modal__size-item--active):active {
+    border-color: #62d1ba;
+  }
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: @col-grey;
+
+  border: 2px solid #ececec;
+  width: 82px;
+  height: 52px;
+}
+
+.modal__label {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-cart__input--s:checked ~ .modal-cart__size-list .modal-cart__size-item:nth-child(1),
+.modal-cart__input--m:checked ~ .modal-cart__size-list .modal-cart__size-item:nth-child(2),
+.modal-cart__input--l:checked ~ .modal-cart__size-list .modal-cart__size-item:nth-child(3) {
+  border-color: @col-light;
+}
+
+.modal__button {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #ffffff;
+  width: 260px;
+
+  background-color: @col-light;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 566px;
+    padding: 0 108px;
+    padding-bottom: 45px;
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 57px;
+    padding: 0;
+    width: 355px;
+  }
+
+  .modal__choose-size {
+    font-size: 17px;
+  }
+
+  .modal__button {
+    width: 350px;
+  }
+}
+
+
+.modal--is-visible {
+  display: block;
+}
+

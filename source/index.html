@@ -5,10 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Мишка</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo">
@@ -70,8 +74,7 @@
       <div class="intro__wrap">
         <h1 class="intro__title">Милые штуки ручной<br>работы для дома</h1>
         <ul class="intro__list">
-          <li class="intro__item intro__item--light"><a class="intro__item-link intro__item-link--light"
-              href="#">Предметы интерьера</a></li>
+          <li class="intro__item intro__item--light"><a class="intro__item-link intro__item-link--light" href="#">Предметы интерьера</a></li>
           <li class="intro__item intro__item--dark"><a class="intro__item-link intro__item-link--dark" href="#">Детские
               игрушки</a></li>
         </ul>
@@ -101,18 +104,13 @@
             </div>
           </dl>
           <picture>
-            <source type="image/webp" media="(min-width: 1150px)"
-              srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1150px)"
-              srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
-              alt="Товар недели">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="week-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели">
           </picture>
           <p class="week-product__cost">Цена: 990 руб.</p>
           <a href="#" class="week-product__order button">Заказать</a>
@@ -175,8 +173,7 @@
             <div class="contacts__adress-wrap">
               <dt class="contacts__adress-key">aдрес:</dt>
               <dd class="contacts__adress-value">
-                <a class="contacts__adress-link"
-                  href="https://www.google.com/maps/place/Доходный+дом+Н.+А.+Мельцера/@59.9388059,30.3220345,17.75z/data=!4m5!3m4!1s0x4696310fca640933:0x8403eb878242dbd5!8m2!3d59.9387782!4d30.3231967?hl=ru-RU">
+                <a class="contacts__adress-link" href="https://www.google.com/maps/place/Доходный+дом+Н.+А.+Мельцера/@59.9388059,30.3220345,17.75z/data=!4m5!3m4!1s0x4696310fca640933:0x8403eb878242dbd5!8m2!3d59.9387782!4d30.3231967?hl=ru-RU">
                   г. Санкт-Петербург, ул.Большая Конюшенная,<br>д. 19/8, офис 101</a>
               </dd>
             </div>
@@ -184,9 +181,7 @@
         </div>
         <div class="contacts__map">
           <img class="contacts__map-point" src="img/icon-map-pin.svg" alt="Метка">
-          <iframe class="contacts__map-iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3737169803976!2d30.322034484311697!3d59.938805915698296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1554227934679!5m2!1sru!2sru"
-            width="320" height="460" allowfullscreen></iframe>
+          <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1188.3737169803976!2d30.322034484311697!3d59.938805915698296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1554227934679!5m2!1sru!2sru" width="320" height="460" allowfullscreen=""></iframe>
         </div>
       </div>
       <div class="contacts__written-wrap">
@@ -198,28 +193,28 @@
     <div class="footer__wrap">
       <a class="footer__logo">
         <svg class="footer__logo-svg" width="102" height="35">
-          <use href="img/sprite.svg#footer-logo"></use>
+          <use href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <ul class="footer__social">
         <li class="footer__social-item">
           <a href="#" class="footer__social-link"><span class="visually-hidden">Instagram</span>
             <svg class="footer__social-svg" width="22" height="21">
-              <use href="img/sprite.svg#instagram"></use>
+              <use href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a href="#" class="footer__social-link"><span class="visually-hidden">Facebook</span>
             <svg class="footer__social-svg" width="15" height="28">
-              <use href="img/sprite.svg#facebook"></use>
+              <use href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a href="#" class="footer__social-link"><span class="visually-hidden">Twitter</span>
             <svg class="footer__social-svg" width="23" height="22">
-              <use href="img/sprite.svg#twitter"></use>
+              <use href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
@@ -228,13 +223,14 @@
         <a class="footer__develop-logo" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="footer__develop-text">Разработано</span>
           <svg class="footer__develop-logo--img" width="27" height="34">
-            <use href="img/sprite.svg#htmlacademy-logo"></use>
+            <use href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
 
+ <script src="js/script.js"></script>
 
 </body>
 
