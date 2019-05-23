@@ -97,7 +97,7 @@
                   </div>
                   <div class="card__footer">
                     <span class="card__cost">1 200 руб.</span>
-                    <a class="card__button" href="#">
+                    <button class="card__button" href="#">
                       <span class="visually-hidden">В корзину</span>
                       <svg class="card__cart-svg" width="20" height="20">
                         <use href="img/sprite.svg#icon-cart" xlink:href="img/sprite.svg#icon-cart"></use>
@@ -235,20 +235,6 @@
       </div>
   </footer>
   <div class="overlay"></div>
-  <!-- <section class="modal">
-    <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
-      <h2 class="modal-form__title">Добавить в корзину</h2>
-      <span class="modal-form__sel-size">Выберите размер</span>
-
-      <ul class="modal-form__list">
-        <li class="modal-form__item"><button class="modal-form__butn-size">S</button></li>
-        <li class="modal-form__item"><button class="modal-form__butn-size">M</button></li>
-        <li class="modal-form__item"><button class="modal-form__butn-size">L</button></li>
-      </ul>
-      <button class="modal-form__butn-add button">Добавить</button>
-    </form>
-  </section> -->
-
   <section class="modal">
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
         <h2 class="modal__title">Добавить в корзину</h2>
@@ -261,29 +247,10 @@
           <li class="modal__size-item"><label class="modal__label" for="size-M">M</label></li>
           <li class="modal__size-item"><label class="modal__label" for="size-L">L</label></li>
         </ul>
-        <button class="modal-cart__button button" type="submit">Добавить</button>
+        <button class="modal__button button" type="submit">Добавить</button>
       </form>
     </section>
-
-  <script>
-    const setOverlay = (isVisible) => {
-      const className = 'overlay--is-active';
-      const method = isVisible ? 'add' : 'remove';
-
-      document.body.classList[method](className);
-    }
-
-    const setModalVisibility = (isVisible) => {
-      const className = 'modal--is-visible'
-      const modalEl = document.querySelector('.modal');
-      const method = isVisible ? 'add' : 'remove';
-
-      setOverlay(isVisible);
-      modalEl.classList[method](className);
-    }
-
-
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
