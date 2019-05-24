@@ -8,7 +8,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 320px;
   max-width: 568px;
   padding: 36px 30px 46px;
   // border: 1px solid #c6c6c6;
@@ -46,17 +46,14 @@
 }
 
 .modal__size-item {
-  &--active {
-    border-color: @col-light;
-  }
-
-  &:not(.modal__size-item--active):hover {
+  &:hover {
     border-color: #c7c7c7;
   }
 
-  &:not(.modal__size-item--active):active {
+  &:active {
     border-color: #62d1ba;
   }
+
 
   font-weight: bold;
   font-size: 17px;
@@ -92,6 +89,7 @@
 
   background-color: @col-light;
   border: none;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
