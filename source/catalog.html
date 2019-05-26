@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Мишка</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <script src="js/picturefill.min.js" async></script>
-
 </head>
 
 <body>
@@ -16,60 +17,60 @@
   </div>
 
   <header class="header">
-    <div class="header__wrapper">
-      <a class="header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
-        </picture>
-        <button class="header__toggle header__toggle--open ">
+      <div class="header__wrapper">
+        <a class="header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип Mishka">
+          </picture>
+        </a>
+        <button class="header__toggle header__toggle--open header__toggle--hide" type="button">
           <span class="visually-hidden">Раскрыть меню</span>
         </button>
-      </a>
-    </div>
-    <nav class="header__menu">
-      <div class="header__menu-big">
-        <div class="header__menu-wrap">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="header__menu-item header__menu-item--search">
-              <a class="header__menu-link header__menu-link--search" href="#">
-                <span class="header__menu-text--search">Поиск по сайту</span>
-                <svg class="header__search-svg" width="17.6" height="17.6">
-                  <use xlink:href="#icon-search"></use>
-                </svg>
-              </a>
+      </div>
+      <nav class="header__menu">
+        <div class="header__menu-big">
+          <div class="header__menu-wrap">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="header__menu-item header__menu-item--search">
+                <a class="header__menu-link header__menu-link--search" href="#">
+                  <span class="header__menu-text header__menu-text--search">Поиск по сайту</span>
+                  <svg class="header__search-svg" width="17.6" height="17.6" fill="#d3d2d2">
+                    <use  xlink:href="#icon-search"></use>
+                  </svg>
+                </a>
 
+              </li>
+              <li class="header__menu-item header__menu-item--cart">
+                <a class="header__menu-link header__menu-link--cart" href="#">
+                  <span class="header__menu-text header__menu-text--cart">Корзина: пока пуста</span>
+                  <svg class="header__cart-svg" width="20" height="20" fill="#d3d2d2">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <span class="header__delivery header__delivery--out">Бесплатная доставка по России</span>
+          </div>
+        </div>
+        <div class="header__second-menu">
+          <ul class="header__menu-more header__menu-more--out">
+            <li class="header__menu-more-item">
+              <a class="header__menu-more-link" href="#">Новые поступления</a>
             </li>
-            <li class="header__menu-item header__menu-item--cart">
-              <a class="header__menu-link header__menu-link--cart" href="#">
-                <span class="header__menu-text--cart">Корзина: пока пуста</span>
-                <svg class="header__cart-svg" width="20" height="20">
-                  <use  xlink:href="#icon-cart"></use>
-                </svg>
-              </a>
+            <li class="header__menu-more-item">
+              <a class="header__menu-more-link" href="#">Распродажа</a>
             </li>
           </ul>
-          <span class="header__delivery header__delivery--out">Бесплатная доставка по России</span>
         </div>
-      </div>
-      <div class="header__second-menu">
-        <ul class="header__menu-more header__menu-more--out">
-          <li class="header__menu-more-item">
-            <a class="header__menu-more-link" href="#">Новые поступления</a>
-          </li>
-          <li class="header__menu-more-item">
-            <a class="header__menu-more-link" href="#">Распродажа</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
   </header>
 
   <main class="main">
@@ -82,15 +83,17 @@
           <li class="product-cards__item">
             <article class="card">
               <div class="card__wrapper-big">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+                <a class="card__image-link">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-                  <img class="card__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Кролик">
-                </picture>
+                    <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                    <img class="card__image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Кролик">
+                  </picture>
+                </a>
                 <div class="card__wrapper">
                   <div class="card__text">
                     <h2 class="card__title"><a class="card__title-link" href="#">Зайчик-попрыгайчик</a></h2>
@@ -98,11 +101,12 @@
                   </div>
                   <div class="card__footer">
                     <span class="card__cost">1 200 руб.</span>
-                    <button class="card__button" href="#">
+                    <button class="card__button">
                       <span class="visually-hidden">В корзину</span>
-                      <svg class="card__cart-svg" width="20" height="20">
+                      <svg class="card__cart-svg" width="20" height="20" fill="#d3d2d2">
                         <use xlink:href="#icon-cart"></use>
                       </svg>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -111,15 +115,17 @@
           <li class="product-cards__item">
             <article class="card">
               <div class="card__wrapper-big">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+                <a class="card__image-link">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-                  <img class="card__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Полотенца">
-                </picture>
+                    <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                    <img class="card__image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Полотенца">
+                  </picture>
+                </a>
                 <div class="card__wrapper">
                   <div class="card__text">
                     <h2 class="card__title"><a class="card__title-link" href="#">Корзинка для белья</a></h2>
@@ -127,11 +133,12 @@
                   </div>
                   <div class="card__footer">
                     <span class="card__cost">690 руб.</span>
-                    <button class="card__button" href="#">
-                      <span class="visually-hidden">В корзину</span>
-                      <svg class="card__cart-svg" width="20" height="20">
-                        <use xlink:href="#icon-cart"></use>
-                      </svg>
+                    <button class="card__button">
+                        <span class="visually-hidden">В корзину</span>
+                        <svg class="card__cart-svg" width="20" height="20" fill="#d3d2d2">
+                          <use xlink:href="#icon-cart"></use>
+                        </svg>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -140,15 +147,17 @@
           <li class="product-cards__item">
             <article class="card">
               <div class="card__wrapper-big">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+                <a class="card__image-link">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
 
-                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
-                  <img class="card__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Игрушки">
-                </picture>
+                    <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                    <img class="card__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Игрушки">
+                  </picture>
+                </a>
                 <div class="card__wrapper">
                   <div class="card__text card__text-box ">
                     <h2 class="card__title"><a class="card__title-link" href="#">Большая корзинка для игрушек</a></h2>
@@ -156,11 +165,12 @@
                   </div>
                   <div class="card__footer">
                     <span class="card__cost">1 500 руб.</span>
-                    <button class="card__button" href="#">
+                    <button class="card__button">
                       <span class="visually-hidden">В корзину</span>
-                      <svg class="card__cart-svg" width="20" height="20">
-                        <use  xlink:href="#icon-cart"></use>
+                      <svg class="card__cart-svg" width="20" height="20" fill="#d3d2d2">
+                        <use xlink:href="#icon-cart"></use>
                       </svg>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -172,18 +182,22 @@
     </section>
     <section class="process">
       <h2 class="process__title">Процесс производства</h2>
-      <svg class="process__image--svg" width="100" height="77">
+      <button class="process__image" type="button">
+      <svg class="process__image-svg" width="100" height="77">
         <use xlink:href="#icon-play"></use>
       </svg>
-      <picture class="process__picture">
-        <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+      </button>
+      <a class="card__image-link">
+        <picture class="process__picture">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
 
-        <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-        <img class="process__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
-      </picture>
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="process__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
+        </picture>
+       </a>
       <div class="process-wrapper">
         <p class="process__description">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -194,7 +208,7 @@
   </main>
   <footer class="footer">
       <div class="footer__wrap">
-        <a class="footer__logo">
+        <a class="footer__logo" href="index.html">
           <svg class="footer__logo-svg" width="102" height="35">
             <use  xlink:href="#logo-footer"></use>
           </svg>
@@ -225,7 +239,7 @@
         <div class="footer__develop">
           <a class="footer__develop-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer__develop-text">Разработано</span>
-            <svg class="footer__develop-logo--img" width="27" height="34">
+            <svg class="footer__develop-svg" width="27" height="34">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>

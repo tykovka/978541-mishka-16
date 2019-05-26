@@ -1,4 +1,4 @@
-.contacts-wrap {
+.contacts__wrap {
   // .wrapper-mob();
   margin-top: 87px;
 }
@@ -76,6 +76,18 @@
 .contacts__map {
   position: relative;
   // .wrapper-mob();
+  height: 457px;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 322px 457px;
+  background-color: #ebe2d1;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 322px 457px;
+  }
 }
 
 .contacts__map-point {
@@ -88,6 +100,7 @@
   margin: 0 auto;
   display: block;
   border: none;
+  width: 100%;
 }
 
 .contacts__email-link:hover {
@@ -97,12 +110,13 @@
 @media only screen and (min-width: @tablet-width) {
   .contacts {
     box-sizing: border-box;
-    margin-top: 145px;
+    margin-top: 93px;
   }
 
   .contacts__text-wrap {
     .wrapper-tab();
     position: relative;
+    margin-bottom: 57px;
   }
 
   .contacts__title {
@@ -148,12 +162,20 @@
   }
 
   .contacts__map-iframe {
-    width: 768px;
+    width: 100%;
   }
 
   .contacts__map {
-    margin: 0;
     margin-top: 56px;
+    margin: 0 auto;
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 768px 457px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+      background-size: 768px 457px;
+    }
   }
 
   .contacts__map-point {
@@ -181,10 +203,10 @@
     .wrapper-desk();
     margin-top: 101px;
     position: relative;
-    margin-bottom: 102px;
+    margin-bottom: 108px;
   }
 
-  .contacts-wrap {
+  .contacts__wrap {
     display: flex;
     .wrapper-desk();
   }
@@ -192,7 +214,7 @@
   .contacts__text-wrap {
     padding-left: 175px;
     box-sizing: border-box;
-    margin-top: 82px;
+    margin-top: 28px;
     padding-right: 20px;
     width: 50%;
   }
@@ -209,6 +231,18 @@
 
   .contacts__map {
     width: 50%;
+
+    width: 525px;
+    height: 457px;
+    background-image: url("../img/map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 525px 457px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+      background-size: 524px 462px;
+    }
+
   }
 
   .contacts__map-iframe {
@@ -223,6 +257,6 @@
   .contacts__written {
     position: absolute;
     left: 16.67%;
-    bottom: -54px;
+    bottom: -60px;
   }
 }

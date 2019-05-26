@@ -12,19 +12,20 @@ function setModalVisibility(isVisible) {
   document.body.classList[method]('overlay--is-active');
 }
 
-if (window.innerWidth < 768) {
 document.addEventListener('DOMContentLoaded', function() {
-  menuEl.classList.remove('header__menu--is-close');
-  toggleButton.classList.toggle('header__toggle--open');
-  menuEl.classList.toggle('header__menu--is-close');
-});
+  if (window.innerWidth < 768) {
+    toggleButton.classList.remove("header__toggle--hide");
+    menuEl.classList.remove('header__menu--is-close');
 
+    toggleButton.classList.toggle('header__toggle--open');
+    menuEl.classList.toggle('header__menu--is-close');
+  }
+});
 
 toggleButton.addEventListener('click', function() {
   toggleButton.classList.toggle('header__toggle--open');
   menuEl.classList.toggle('header__menu--is-close');
 });
-}
 
 if (weekOrderBtn !== null) {
   weekOrderBtn.addEventListener('click', function() {
