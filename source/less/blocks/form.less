@@ -31,14 +31,14 @@
 .form__color-block {
   .wrapper-mob();
   padding: 0;
-  margin-bottom: 44px;
-  margin-top: 24px;
+  margin-bottom: 33px;
   border: none;
 }
 
 .form__title {
   padding: 0;
   position: relative;
+  margin-top: 11px;
   .form-title();
 
   &--type {
@@ -108,7 +108,6 @@
   }
 
   &:focus {
-    outline: none;
     color: #444444;
     border-bottom-color: #62d1ba;
   }
@@ -163,12 +162,12 @@
   }
 
   &-phone {
-    margin-top: 11px;
+    margin-top: 10px;
     margin-bottom: 32px;
   }
 
   &-email {
-    margin-bottom: 32px;
+    margin-bottom: 21px;
   }
 
   &-more {
@@ -199,7 +198,8 @@
   position: relative;
 }
 
-.form__label-type:hover ~ .form__radio {
+.form__label-type:hover ~ .form__radio,
+.form__label-type input:focus + .form__radio {
   border-color: #62d1ba;
 }
 
@@ -254,7 +254,8 @@ input[type="checkbox"]:disabled ~ .form__checkbox {
   position: relative;
 }
 
-.form__label-color:hover ~ .form__checkbox {
+.form__label-color:hover ~ .form__checkbox,
+.form__label-color input:focus + .form__checkbox {
   border-color: #62d1ba;
 }
 
@@ -308,7 +309,7 @@ input[type="checkbox"]:checked ~ .form__checkbox::before {
   background-image: url("data:image/svg+xml,%3Csvg fill='%23cccccc' version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='32px' height='32px' viewBox='0 0 32 32' enable-background='new 0 0 32 32' xml:space='preserve'%3E%3Cpath id='mail' d='M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: top 8px right 5px;
-  padding-bottom: 14px;
+  padding-bottom: 11px;
 }
 
 .form__input-phone {
@@ -365,13 +366,17 @@ input[type="checkbox"]:checked ~ .form__checkbox::before {
     margin-top: 13px;
 
     &--color {
-      margin-top: -6px;
+      margin-top: 15px;
     }
 
     &--more {
       // margin-right: 60px;
       width: 100px;
       margin-top: 30px;
+    }
+
+    &--name {
+      margin-top: 18px;
     }
 
     &--phone {
@@ -463,6 +468,13 @@ input[type="checkbox"]:checked ~ .form__checkbox::before {
     width: 150px;
   }
 
+  .form__label-name {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 27px;
+  }
+
   .form__label-color--right {
     margin-left: 112px;
   }
@@ -473,18 +485,12 @@ input[type="checkbox"]:checked ~ .form__checkbox::before {
 
   .form__group-name {
     margin-bottom: 20px;
+    margin-top: 43px;
   }
 
   .form__group-name-wrap {
     .wrapper-tab();
     display: flex;
-  }
-
-  .form__label-name {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 28px;
   }
 
   .form__label-name-wrap {
@@ -495,8 +501,6 @@ input[type="checkbox"]:checked ~ .form__checkbox::before {
 
   .form__input-text {
     margin-left: 24px;
-    // padding-top: 16px;
-    // padding-bottom: 16px;
     padding-left: 21px;
   }
 
@@ -522,10 +526,11 @@ input[type="checkbox"]:checked ~ .form__checkbox::before {
   .form__input-phone {
     background: #f1f1f1;
     width: 501px;
-    margin-left: 19px;
-    padding-top: 12px;
+    padding-top: 15px;
     padding-left: 15px;
     margin-bottom: 10px;
+    margin-left: 19px;
+
 
     &:hover,
     &:focus {
@@ -545,6 +550,10 @@ input[type="checkbox"]:checked ~ .form__checkbox::before {
 
   .form__group-phone {
     margin-bottom: 10px;
+  }
+
+  .form__group-more {
+    margin-top: 33px;
   }
 
   .form__group-phone-wrap {
@@ -702,7 +711,7 @@ input[type="checkbox"]:checked ~ .form__checkbox::before {
 
   .form__input-phone {
     width: 700px;
-
+    padding-top: 11px;
     background-position: top 5px right 8px;
   }
 
@@ -716,6 +725,7 @@ input[type="checkbox"]:checked ~ .form__checkbox::before {
   .form__group-more-wrap {
     .wrapper-desk();
     padding-left: 63px;
+    padding-top: 11px;
   }
 
   .form__text {

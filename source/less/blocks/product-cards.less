@@ -10,12 +10,18 @@
 
 @media only screen and (min-width: @tablet-width) {
   .product-cards__list {
+    .wrapper-tab();
+  }
+
+
+  .product-cards__item:first-child {
     margin-top: 80px;
   }
 }
 
 @media only screen and (min-width: @desktop-width) {
   .product-cards__list {
+    width: 1050px;
     margin-top: 131px;
     margin-right: 0;
     margin-left: 0;
@@ -29,6 +35,10 @@
   .product-cards__item {
     width: 315px;
     margin-bottom: 0;
+  }
+
+  .product-cards__item:first-child {
+    margin-top: 0;
   }
 
   .product-cards__wrapper {
