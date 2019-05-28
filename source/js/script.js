@@ -28,7 +28,8 @@ toggleButton.addEventListener('click', function() {
 });
 
 if (weekOrderBtn !== null) {
-  weekOrderBtn.addEventListener('click', function() {
+  weekOrderBtn.addEventListener('click', function(e) {
+    e.preventDefault();
     setModalVisibility(true);
   });
 }
@@ -40,7 +41,8 @@ if (overlay !== null) {
 }
 
 productCards.addEventListener('click', function(e) {
-  if (e.target.closest('button')) {
+  if (e.target.closest('a')) {
+    e.preventDefault();
     setModalVisibility(true);
   }
 });
