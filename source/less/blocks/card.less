@@ -47,6 +47,7 @@
 }
 
 .card__cost {
+  display: block;
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
@@ -91,8 +92,6 @@
 
 @media only screen and (min-width: @tablet-width) {
   .card {
-    margin-right: 0;
-    margin-left: 0;
     display: flex;
     border: none;
     box-sizing: border-box;
@@ -102,8 +101,8 @@
   .card__wrapper-big {
     border: 1px solid  #ececec;
     display: flex;
-    box-sizing: border-box;
-    width: 668px;
+    // box-sizing: border-box;
+    .wrapper-tab();
   }
 
 
@@ -176,6 +175,7 @@
 
   .card__wrapper-big {
     flex-direction: column;
+    .wrapper-desk();
   }
 
   .card__img {

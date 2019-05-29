@@ -4,6 +4,7 @@
 
 .product-cards__wrapper {
   .wrapper-mob();
+  max-width: 260px;
 }
 
 .product-cards__list {
@@ -14,6 +15,7 @@
 @media only screen and (min-width: @tablet-width) {
   .product-cards__wrapper {
     .wrapper-tab();
+    max-width: 668px;
   }
 
   .product-cards__item:first-child {
@@ -24,12 +26,13 @@
 @media only screen and (min-width: @desktop-width) {
   .product-cards__wrapper {
     .wrapper-desk();
+    max-width: 1050px;
   }
 
   .product-cards__list {
     margin-top: 131px;
-    margin-right: 0;
-    margin-left: 0;
+    // margin-right: 0;
+    // margin-left: 0;
     margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
