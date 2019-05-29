@@ -105,7 +105,7 @@
       <fieldset class="form__color-block">
         <div class="form__color-block-wrap">
           <h2 class="form__title form__title--type form__title--color">Цвет</h2>
-          <div class="form__label-color--wrap">
+          <div class="form__color-wrap">
             <label class="form__label form__label-color form__label-color--white">
               <input class="form__color-input  visually-hidden" type="checkbox" name="color" checked>
               Белый
@@ -162,13 +162,13 @@
         <fieldset class="form__group form__group-phone">
           <div class="form__group-phone-wrap">
             <label class="form__title form__title--phone" for="phone-number">Тел</label>
-              <input class="form__input-text form__input-phone" type="text" name="phone-number" id="phone-number" pattern="\+[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
+              <input class="form__input-text form__input-phone" type="tel" name="phone-number" id="phone-number" pattern="\+[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
           </div>
         </fieldset>
         <fieldset class="form__group form__group-email">
           <div class="form__group-email-wrap">
             <label class="form__title form__title--email" for="email">E-mail </label>
-              <input class="form__input-text form__input-email " type="text" name="email" id="email" placeholder="Ваш Email*" required>
+              <input class="form__input-text form__input-email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
           </div>
         </fieldset>
       </div>
